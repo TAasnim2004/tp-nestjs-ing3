@@ -9,11 +9,9 @@ export class TravelService {
     { id: 2, name: 'To Morocco', price: 4000 },
   ];
 
-
   findAll() {
     return this.trips;
   }
-
 
   findOne(id: number) {
     const trip = this.trips.find(t => t.id === id);
@@ -25,4 +23,5 @@ export class TravelService {
     return trip;
   }
 }
+
 
